@@ -306,15 +306,13 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 
 * https://docs.keydb.dev/
 
-* [Código Exemplo - Keydb - igual ao Redis](https://github.com/IgorAvilaPereira/tbd2024_2sem/tree/main/codigos/keydb)
-
-[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_1sem/tree/main/./07_redis)
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_redis)
 [redis.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis.md) <br>
 [exemplo_redis_jedis](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/exemplo_redis_jedis) <br>
 [jedis](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/jedis) <br>
 [minicurso-java-spring-solid-main](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/minicurso-java-spring-solid-main) <br>
 ## [./02_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./02_redis) <br>
-<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_1sem/tree/main/08_redis2) <br><br>
+<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/02_redis) <br><br>
 &nbsp;
 [redis.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/redis.md) <br>
 [redis_spring_cacheavel.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/redis_spring_cacheavel.md) <br>
@@ -322,6 +320,6 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 [minicurso-java-spring-solid-main](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/minicurso-java-spring-solid-main) <br>
 [todo_tcc](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/todo_tcc) <br>
 ## [./03_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./03_redis) <br>
-<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_1sem/tree/main/09_redis3) <br><br>
+<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/03_redis) <br><br>
 &nbsp;
 [redis3.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./03_redis/redis3.md) <br>
