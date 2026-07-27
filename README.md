@@ -81,6 +81,7 @@ ou 20, ou 22
 [setup.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/setup.md) <br>
 [slides](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/slides) <br>
 ## [./01_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_redis) <br>
+[aula.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/aula.md) <br>
 [introducao_nosql_redis.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/introducao_nosql_redis.pdf) <br>
 https://youtu.be/xGbqGyix0_0
 
