@@ -80,3 +80,6 @@ ou 20, ou 22
 
 [setup.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/setup.md) <br>
 [slides](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/slides) <br>
+## [./01_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_redis) <br>
+<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/01_redis) <br><br>
+&nbsp;
