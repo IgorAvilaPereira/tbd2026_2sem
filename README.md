@@ -307,6 +307,7 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 * https://docs.keydb.dev/
 
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_redis)
+[redis_comandos.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis_comandos.md) <br>
 [redis_intro_spring.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis_intro_spring.md) <br>
 [redis.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis.md) <br>
 [exemplo_redis_jedis](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/exemplo_redis_jedis) <br>
