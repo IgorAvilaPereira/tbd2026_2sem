@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f5f7fa;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            background: #e8f3ff;
+        }
+
+        .titulo {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .texto {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Lista de Registros</h2>
+
+    <ul>
+        {{#vetTodo}}
+        <li>
+            <div class="titulo"><a href="/delete/{{id}}">Deletar</a> <a href="/screen_edit/{{id}}">Edit</a> {{titulo}}</div>
+            <div class="texto">{{texto}}</div>
+        </li>
+        {{/vetTodo}}
+    </ul>
+</div>
+
+</body>
+</html>
