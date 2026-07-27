@@ -311,6 +311,7 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 [redis_comandos.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis_comandos.md) <br>
 [redis_intro_spring.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis_intro_spring.md) <br>
 [redis.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis.md) <br>
+[redis_postgres.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/redis_postgres.md) <br>
 [exemplo_redis_jedis](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/exemplo_redis_jedis) <br>
 [jedis](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/jedis) <br>
 [minicurso-java-spring-solid-main](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/minicurso-java-spring-solid-main) <br>
