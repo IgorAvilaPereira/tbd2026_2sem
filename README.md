@@ -83,6 +83,7 @@ ou 20, ou 22
 ## [./01_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_redis) <br>
 [aula.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/aula.md) <br>
 [introducao_nosql_redis.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/introducao_nosql_redis.pdf) <br>
+[javalin_mustache.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_redis/javalin_mustache.md) <br>
 https://youtu.be/xGbqGyix0_0
 
 <!--
