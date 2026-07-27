@@ -80,13 +80,3 @@ ou 20, ou 22
 
 [setup.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/setup.md) <br>
 [slides](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./00_guia_rapido/slides) <br>
-## [./01_introducao_jpa](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./01_introducao_jpa) <br>
-[javalin_mustache.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/javalin_mustache.md) <br>
-[jpa_1n.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/jpa_1n.md) <br>
-[jpa.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/jpa.md) <br>
-[jpa.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/jpa.pdf) <br>
-[jpql_alternativas.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/jpql_alternativas.md) <br>
-[jpql.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/jpql.md) <br>
-[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2025_2sem/tree/main/01_introducao_jpa)
-&nbsp;
-[formandos](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./01_introducao_jpa/formandos) <br>
