@@ -326,6 +326,9 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 [redis_spring.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/redis_spring.md) <br>
 [minicurso-java-spring-solid-main](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/minicurso-java-spring-solid-main) <br>
 [todo_tcc](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./02_redis/todo_tcc) <br>
+## [./03_plano_de_atividades_tcc](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./03_plano_de_atividades_tcc) <br>
+<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/03_plano_de_atividades_tcc) <br><br>
+&nbsp;
 ## [./03_redis](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./03_redis) <br>
 <br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/03_redis) <br><br>
 &nbsp;
