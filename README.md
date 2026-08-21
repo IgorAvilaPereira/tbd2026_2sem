@@ -333,3 +333,4 @@ Definir - Nova data atividade avaliada  1 -> dia 29/07 tudo: trabalho1 (jpa), tr
 <br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/03_redis) <br><br>
 &nbsp;
 [redis3.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./03_redis/redis3.md) <br>
+[trabalho1.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./03_redis/trabalho1.md) <br>
