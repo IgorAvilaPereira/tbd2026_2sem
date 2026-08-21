@@ -1,8 +1,10 @@
 
-## 📋 Escopo do Trabalho: Sistema de Rastreamento de Veículos
+## 📋 Trabalho 1: Sistema de Rastreamento de Veículos
 
 O sistema consiste em uma aplicação de console em Java que executa três operações de negócio integradas ao Redis e ao MongoDB.
+
 ------------------------------
+
 ## ⚙️ Funcionalidades e Distribuição de Pontos## 1. Limpeza Automática de Histórico Antigo — [Valor: 1,0 Ponto]
 
 * Remoção de Dados: O sistema deve oferecer uma funcionalidade para apagar do MongoDB todos os registros de localização que sejam mais antigos que uma quantidade de dias informada pelo usuário.
