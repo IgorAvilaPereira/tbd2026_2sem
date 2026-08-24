@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.UUID;
 
 import io.javalin.Javalin;
+import io.javalin.config.SizeUnit;
 import io.javalin.rendering.template.JavalinMustache;
 import negocio.ToDo;
 import negocio.Usuario;
@@ -14,15 +15,16 @@ import persistencia.ToDoDAO;
 public class Main {
     public static void main(String[] args) {
         var app = Javalin.create(config -> {
+            config.jetty.multipartConfig.maxFileSize(100, SizeUnit.MB);
 
             config.fileRenderer(new JavalinMustache());
-            config.routes.get("/list", ctx -> {
+            config.routes.get("/", ctx -> {
                 Map<String, Object> map = new HashMap<>();
-                map.put("vetTodo", new ToDoDAO().listar());
+                map.put("vetTodo", new ToDoDAO().listarPorPrioridade());
                 ctx.render("/templates/list.html", map);
             });
 
-            config.routes.get("/", ctx -> {
+            config.routes.get("/screen_add", ctx -> {
                 Map<String, String> map = new HashMap<>();
                 ctx.render("/templates/index.html", map);
             });
@@ -46,16 +48,18 @@ public class Main {
                 String data = ctx.formParam("data");
                 String responsavel = ctx.formParam("responsavel");
                 String id = ctx.formParam("id");
-                // int segundos = Integer.parseInt(ctx.formParam("segundos"));
+                int segundos = Integer.parseInt(ctx.formParam("segundos"));
+                int prioridade = Integer.parseInt(ctx.formParam("prioridade"));
+
                 ToDo toDo = new ToDo();
                 toDo.setId(UUID.fromString(id));
                 toDo.setTitulo(titulo);
                 toDo.setTexto(texto);
                 toDo.setResponsavel(new Usuario(responsavel));
                 toDo.setData(LocalDate.parse(data));
-
-                new ToDoDAO().salvar(toDo);
-                ctx.redirect("/list");
+                toDo.setPrioridade(prioridade);
+                new ToDoDAO().salvar(toDo, segundos);
+                ctx.redirect("/");
             });
 
 
@@ -63,16 +67,18 @@ public class Main {
                 String titulo = ctx.formParam("titulo");
                 String texto = ctx.formParam("texto");
                 String data = ctx.formParam("data");
-                // System.out.println(data);
                 String responsavel = ctx.formParam("responsavel");
                 int segundos = Integer.parseInt(ctx.formParam("segundos"));
+                int prioridade = Integer.parseInt(ctx.formParam("prioridade"));
+                byte arquivo[] = ctx.uploadedFile("arquivo").content().readAllBytes();
                 ToDo toDo = new ToDo();
                 toDo.setTitulo(titulo);
                 toDo.setTexto(texto);
                 toDo.setResponsavel(new Usuario(responsavel));
                 toDo.setData(LocalDate.parse(data));
-                if (segundos != 0) new ToDoDAO().salvar(toDo, segundos);
-                else new ToDoDAO().salvar(toDo);
+                toDo.setPrioridade(prioridade);
+                toDo.setArquivo(arquivo);
+                new ToDoDAO().salvar(toDo, segundos);
                 ctx.redirect("/");
             });
 

@@ -9,10 +9,15 @@ public class ToDo {
     private String texto;
     private Usuario responsavel; 
     private LocalDate data;
+    private int prioridade;
+    private byte arquivo[];
+    private String base64;
 
     public ToDo(){
         this.id = UUID.randomUUID();
     }
+
+    
 
     public UUID getId() {
         return id;
@@ -41,10 +46,7 @@ public class ToDo {
         this.responsavel = responsavel;
     }
 
-    @Override
-    public String toString() {
-        return "ToDo [id=" + id.toString() + ", titulo=" + titulo + ", texto=" + texto + ", responsavel=" + responsavel + "]";
-    }
+  
 
     public LocalDate getData() {
         return data;
@@ -52,6 +54,51 @@ public class ToDo {
 
     public void setData(LocalDate data) {
         this.data = data;
+    }
+
+
+
+    public int getPrioridade() {
+        return prioridade;
+    }
+
+
+
+    public void setPrioridade(int prioridade) {
+        this.prioridade = prioridade;
+    }
+
+    
+
+
+    @Override
+    public String toString() {
+        return "ToDo [id=" + id + ", titulo=" + titulo + ", texto=" + texto + ", responsavel=" + responsavel + ", data="
+                + data + ", prioridade=" + prioridade + "]";
+    }
+
+
+
+    public byte[] getArquivo() {
+        return arquivo;
+    }
+
+
+
+    public void setArquivo(byte[] arquivo) {
+        this.arquivo = arquivo;
+    }
+
+
+
+    public void setBase64(String encodeToString) {
+        this.base64 = encodeToString;
+    }
+
+
+
+    public String getBase64() {
+        return base64;
     }
 
     

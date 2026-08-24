@@ -98,14 +98,17 @@
 
 <body>
 
-    <form action="/add" method="post">
+    <form action="/add" method="post" enctype="multipart/form-data">
         <h2>Novo Registro</h2>
 
         <label>Título</label>
         <input type="text" name="titulo">
 
         <label>Segundos</label>
-        <input type="number" name="segundos" value="0">
+        <input type="number" name="segundos" value="-1">
+
+        <label>Prioridade</label>
+        <input type="number" name="prioridade" value="0">
 
         <label>Texto</label>
         <textarea name="texto"></textarea>
@@ -115,6 +118,9 @@
 
         <label>Data</label>
         <input type="date" name="data">
+
+        <label>Arquivo</label>
+        <input type="file" name="arquivo">
 
         <input type="submit" value="Salvar">
     </form>

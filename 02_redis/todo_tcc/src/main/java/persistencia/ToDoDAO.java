@@ -2,6 +2,7 @@ package persistencia;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -24,6 +25,31 @@ public class ToDoDAO {
 this.gson = new GsonBuilder()
 .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
     .create();
+    }
+
+     public List<ToDo> listarPorPrioridade(){
+        List<ToDo> veToDo = new ArrayList<ToDo>();
+        JedisPool pool = new JedisPool(HOST, PORT);
+        try (Jedis jedis = pool.getResource()) {
+            jedis.select(1);
+            List<String> keys = jedis.zrevrange("ranking:prioridade", 0, -1);
+            Iterator<String> iterator = keys.iterator();
+            jedis.select(0);
+            while (iterator.hasNext()) {
+                String key = iterator.next();
+                if (jedis.exists(key)) {
+                    ToDo todo = gson.fromJson(jedis.get(key), ToDo.class);
+                    if (todo.getArquivo() != null) todo.setBase64(Base64.getEncoder().encodeToString(todo.getArquivo()));
+                    veToDo.add(todo);
+                    
+    
+
+                }   
+            }             
+        }
+        pool.close();
+        return veToDo;
+
     }
 
     public List<ToDo> listar(){
@@ -58,7 +84,14 @@ this.gson = new GsonBuilder()
     public void salvar(ToDo toDo, int segundos) {
         JedisPool pool = new JedisPool(HOST, PORT);
         try (Jedis jedis = pool.getResource()) {
-            jedis.setex(toDo.getId().toString(), segundos, gson.toJson(toDo));
+            if (segundos > 0) {
+                jedis.setex(toDo.getId().toString(), segundos, gson.toJson(toDo));
+            } else {
+                this.salvar(toDo);
+            }
+            jedis.select(1);
+            jedis.zadd("ranking:prioridade", Double.parseDouble(String.valueOf(toDo.getPrioridade())), toDo.getId().toString());
+
         }
         pool.close();
 
@@ -75,7 +108,11 @@ this.gson = new GsonBuilder()
     public void deletar(String uuid) {
         JedisPool pool = new JedisPool(HOST, PORT);
         try (Jedis jedis = pool.getResource()) {
+            jedis.select(0);
             jedis.del(uuid);
+            jedis.select(1);
+            jedis.del(uuid);
+            jedis.select(0);
         }
         pool.close();
     }

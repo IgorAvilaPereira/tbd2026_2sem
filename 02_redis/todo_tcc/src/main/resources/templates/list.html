@@ -68,11 +68,13 @@
         {{#vetTodo}}
         <li>
             <div class="titulo"><a href="/delete/{{id}}">Deletar</a> <a href="/screen_edit/{{id}}">Edit</a> {{titulo}}</div>
-            <div class="texto">{{texto}}</div>
+            <div class="texto">{{id}} {{prioridade}} {{texto}}</div>
+            <div>"<img src="data:image/jpeg;base64, {{base64}}" ></div>
         </li>
         {{/vetTodo}}
     </ul>
 </div>
+<a href="/screen_add">add</a>
 
 </body>
 </html>
