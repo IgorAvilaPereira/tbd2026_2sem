@@ -1,0 +1,9 @@
+db.playlist.insertOne(
+    {"artista": "tiririca", "titulo": "florentida", "duracao": 150}
+)
+
+db.playlist.updateOne({"artista": "tiririca"},{$set:{"titulo":"a florentina de jesus"}})
+
+
+db.playlist.deleteOne({"_id":  ObjectId("68ed7b5d75c347274d0785b4")}) 
+
