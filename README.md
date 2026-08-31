@@ -612,5 +612,6 @@ db.users.find({nome:{$in:["igor", "erick"]}})
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./04_mongodb)
 [exemplo_manual](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/exemplo_manual) <br>
 [mongobd](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/mongobd) <br>
+[mongodb_document](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/mongodb_document) <br>
 [mongodb_pojo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/mongodb_pojo) <br>
 [playlist](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/playlist) <br>
