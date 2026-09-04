@@ -615,3 +615,28 @@ db.users.find({nome:{$in:["igor", "erick"]}})
 [mongodb_document](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/mongodb_document) <br>
 [mongodb_pojo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/mongodb_pojo) <br>
 [playlist](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./04_mongodb/playlist) <br>
+## [./05_mongodb2](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./05_mongodb2) <br>
+[exemplos.json](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/exemplos.json) <br>
+[mongodb_aggregation.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_aggregation.md) <br>
+[mongodb_aggregation.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_aggregation.pdf) <br>
+[mongodb.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb.pdf) <br>
+**aggregation**
+
+* https://www.mongodb.com/docs/manual/core/aggregation-pipeline/#std-label-aggregation-pipeline
+
+* https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/#mongodb-pipeline-pipe.-group
+
+**Data Model Examples and Patterns**
+
+* https://www.mongodb.com/docs/manual/applications/data-models/
+
+**mongo compass:**
+
+* https://www.mongodb.com/docs/compass/current/install/
+
+
+
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./05_mongodb2)
+[trabalho2.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/trabalho2.md) <br>
+[demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/demo) <br>
+[restaurante_universitario](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/restaurante_universitario) <br>
