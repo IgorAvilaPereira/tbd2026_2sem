@@ -620,6 +620,9 @@ db.users.find({nome:{$in:["igor", "erick"]}})
 [mongodb_aggregation.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_aggregation.md) <br>
 [mongodb_aggregation.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_aggregation.pdf) <br>
 [mongodb.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb.pdf) <br>
+Usando Classes de Modelo
+
+
 **aggregation**
 
 * https://www.mongodb.com/docs/manual/core/aggregation-pipeline/#std-label-aggregation-pipeline
