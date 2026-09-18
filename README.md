@@ -645,3 +645,6 @@ Usando Classes de Modelo
 [demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/demo) <br>
 [mongodb_cupons](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_cupons) <br>
 [restaurante_universitario](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/restaurante_universitario) <br>
+## [./06_mongo_aggregation](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./06_mongo_aggregation) <br>
+<br><br>[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/06_mongo_aggregation) <br><br>
+&nbsp;
