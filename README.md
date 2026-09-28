@@ -646,6 +646,7 @@ Usando Classes de Modelo
 [mongodb_cupons](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/mongodb_cupons) <br>
 [restaurante_universitario](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./05_mongodb2/restaurante_universitario) <br>
 ## [./06_mongo_aggregation](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./06_mongo_aggregation) <br>
+[aggregation_mongodb_java.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./06_mongo_aggregation/aggregation_mongodb_java.md) <br>
 [aggregation_mongodb.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./06_mongo_aggregation/aggregation_mongodb.md) <br>
 https://learn.mongodb.com/learn/course/mongodb-aggregation-with-java/lesson-2-using-mongodb-aggregation-stages-with-java-match-and-group/learn?page=2
 
