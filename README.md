@@ -659,3 +659,4 @@ https://learn.mongodb.com/learn/course/mongodb-aggregation-with-java/lesson-2-us
 &nbsp;
 [revisao.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./07_revisao_1bim/revisao.md) <br>
 [revisao_proposta.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./07_revisao_1bim/revisao_proposta.md) <br>
+[encurtador_url](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./07_revisao_1bim/encurtador_url) <br>
