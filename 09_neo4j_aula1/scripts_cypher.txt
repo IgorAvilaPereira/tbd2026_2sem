@@ -1,0 +1,54 @@
+-- deletando tudo
+MATCH(n) DETACH DELETE n;
+
+-- criando nodo
+CREATE(p:Perfil {nome: 'Igor'});
+-- adicionando uma nova propriedade em um nodo especifico
+MATCH (n:Perfil) 
+WHERE n.nome = 'Maryene' SET n += {profissao: 'analista de sistemas'};
+-- removendo propriedade
+MATCH (n:Perfil) WHERE n.nome = 'Maryene' SET n.profissao = null;
+
+CREATE(p:Perfil {nome: 'Maryene'});
+CREATE(p:Publicacao {texto: 'Teste'})
+
+
+-- criando arestas
+-- igor segue maryene
+MATCH(p1: Perfil), (p2: Perfil) 
+WHERE p1.nome = 'Igor' and p2.nome = 'Maryene'
+CREATE(p1)-[:SEGUE]->(p2);
+
+-- maryene segue igor
+MATCH(p1: Perfil), (p2: Perfil) 
+WHERE p1.nome = 'Igor' and p2.nome = 'Maryene'
+CREATE(p2)-[:SEGUE]->(p1);
+
+-- igor publicou uma publicacao
+MATCH(p1: Perfil), (p2: Publicacao) 
+WHERE p1.nome = 'Igor' and ID(p2) = 8
+CREATE(p1)-[:PUBLICOU]->(p2);
+
+-- maryene curtiu a publicou do igor
+MATCH(p1: Perfil), (p2: Publicacao) 
+WHERE p1.nome = 'Maryene' and ID(p2) = 8
+CREATE(p1)-[:CURTIU{data:'2025-05-26'}]->(p2);
+
+-- deleta uma específica (pelo ID) as arestas do tipo c que ligavam p1 a p2
+MATCH(p1: Perfil), (p2: Publicacao) 
+WHERE p1.nome = 'Maryene' and ID(p2) = 8
+match(p1)-[c:CURTIU]->(p2)
+where ID(c) = 9
+DELETE c
+return *;
+
+-- deletar um nodo e suas ligações
+match(n) where ID(n) = 3 detach delete n;
+
+-- deletar aresta (perigoso)
+match(n) where ID(n) = 6 delete n;
+
+-- deletar uma aresta especifica
+MATCH (p1:Perfil)-[s:SEGUE]->(p2:Perfil)
+where ID(p1) = 7 and ID(p2) = 9 
+DELETE s;	

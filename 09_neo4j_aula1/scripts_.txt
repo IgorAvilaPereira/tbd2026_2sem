@@ -1,0 +1,34 @@
+MATCH (n) 
+DETACH DELETE n
+CREATE(p: Pessoa {nome: 'Igor Pereira', profissao: 'Professor'})
+CREATE(c: Cidade {nome: 'Rio Grande'})
+CREATE (p)-[:RESIDE_EM]->(c)
+
+
+
+CREATE(p: Pessoa {nome: 'Erick', profissao: 'Programador'})
+
+
+MATCH (p1:Pessoa), (p2:Pessoa)
+where ID(p1) = 38 and ID(p2) = 58
+CREATE (p1)-[:ORIENTADOR]->(p2)
+CREATE (p2)-[:ORIENTANDO]->(p1)
+
+
+MATCH (p1:Pessoa), (p2:Pessoa) 
+where ID(p1) = 38 OR ID(p2) = 58
+CREATE (p1)-[:AMIGO{desde:"19/11/1910"}]->(p2)
+
+
+MATCH (p1:Pessoa) where ID(p1) = 38
+set p1.profissao = 'Coordenador de Curso';
+
+
+
+MATCH (p1:Pessoa) where ID(p1) = 38
+set p1 += {avaliacao: 10};
+
+
+MATCH (p1:Pessoa) where ID(p1) = 38 
+DELETE p1;
+
