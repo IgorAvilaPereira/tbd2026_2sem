@@ -665,7 +665,16 @@ Atividade + Entrega do Trabalho
 ## [./09_neo4j_aula1](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./09_neo4j_aula1) <br>
 [neo4j_cypher.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/neo4j_cypher.pdf) <br>
 [neo4j.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/neo4j.pdf) <br>
-Neo4j (aula 1)
+**Aula de Hoje**
+
+* Apresentar cronograma
+
+* Apresentar Trabalho 2
+
+* Apresentar 2º bim.
+
+* Neo4j (aula 1)
+
 
 <!--
 * [Neo4j (Aula 1)](https://github.com/IgorAvilaPereira/tbd2024_2sem/raw/main/slides/neo4j.pdf)
@@ -831,4 +840,5 @@ public class App {
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./09_neo4j_aula1)
 [scripts_cypher.txt](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/scripts_cypher.txt) <br>
 [scripts_.txt](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/scripts_.txt) <br>
+[trabalho2.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/trabalho2.md) <br>
 [neo4j2](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./09_neo4j_aula1/neo4j2) <br>
