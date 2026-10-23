@@ -1,4 +1,13 @@
-Neo4j (aula 1)
+**Aula de Hoje**
+
+* Apresentar cronograma
+
+* Apresentar Trabalho 2
+
+* Apresentar 2º bim.
+
+* Neo4j (aula 1)
+
 
 <!--
 * [Neo4j (Aula 1)](https://github.com/IgorAvilaPereira/tbd2024_2sem/raw/main/slides/neo4j.pdf)
