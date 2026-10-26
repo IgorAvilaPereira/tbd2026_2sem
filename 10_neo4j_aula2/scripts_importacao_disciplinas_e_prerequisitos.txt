@@ -1,0 +1,47 @@
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_1sem/refs/heads/main/14_neo4j_aula2/disciplinas.csv' AS line1
+CREATE (d:Disciplina {semestre: line1.semestre, sigla: line1.sigla, nome: line1.nome, horas: toInteger(line1.horas)});
+ 
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_1sem/refs/heads/main/14_neo4j_aula2/prerequisitos.csv' AS line2
+MATCH (d1:Disciplina {sigla: line2.disciplina})
+MATCH (d2:Disciplina {sigla: line2.prerequisito})
+CREATE (d1)-[:PREREQUISITO]->(d2);
+ 
+Obs: poderia também ter convertido semestre para inteiro (caso não tivesse o semestre "optativa") e ter colocado mais um atributo (área de formação: ciência de computação, análise de sistemas, banco de dados e etc.)
+ 
+-- EX: Listar uma disciplina e seus pré-requisitos. Neste exemplo, a disciplina escolhida foi IOB
+ 
+match(d:Disciplina {sigla: 'IOB'}) 
+MATCH (d)-[a:PREREQUISITO]->(d2)
+RETURN d, a, d2;
+
+MATCH (m:Movie)
+MATCH (p:Person)
+MATCH(p)-[:ACTED_IN]->(m)
+WHERE m.title = "The Matrix" 
+return m,p;
+
+MATCH (d1:Disciplina)
+MATCH (d2:Disciplina)
+MATCH(d1)-[:]->(d2)
+WHERE d1.sigla = "TBD" 
+return d1,d2;
+
+
+MATCH(p1:Perfil) where p1.nome = "Igor" 
+MATCH(p2:Perfil) 
+MATCH(p3:Perfil)
+MATCH (p1)-[s1:SEGUE]->(p2)-[s2:SEGUE]->(p3) where p3.nome <> "Igor" 
+MATCH (p3) WHERE NOT EXISTS ((p1)-[:SEGUE]->(p3))
+RETURN p3;
+
+MATCH (m:Movie)
+MATCH (p:Person)
+MATCH(p)-[:ACTED_IN]->(m)
+WHERE m.title = "The Matrix" 
+return m,p;
+
+MATCH (d1:Disciplina)
+MATCH (d2:Disciplina)
+MATCH(d1)-[:]->(d2)
+WHERE d1.sigla = "TBD" 
+return d1,d2;

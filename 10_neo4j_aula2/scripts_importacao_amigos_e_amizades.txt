@@ -1,0 +1,7 @@
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2025_1sem/9_neo4j_aula2/main/perfis.csv' AS line1
+CREATE (p:Perfil {cpf: line1.cpf, nome: line1.nome, idade: toInteger(line1.idade)});
+
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/IgorAvilaPereira/tbd2025_1sem/9_neo4j_aula2/main/amizades.csv' AS line2
+MATCH(p1: Perfil) WHERE p1.cpf = line2.cpf1
+MATCH(p2: Perfil) WHERE p2.cpf = line2.cpf2
+MERGE(p1)-[:EH_AMIGO]->(p2);

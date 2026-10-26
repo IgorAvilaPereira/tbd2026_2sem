@@ -1,0 +1,41 @@
+semestre,sigla,nome,horas
+1,FCP,Fundamentos da Computação,66
+1,LPG,Lógica de Programação,100
+1,IHC,Fundamentos de Interação Humano-Computador,33
+1,SIF,Sistemas de Informação,66
+1,TSC,Tecnologia e Sociedade,33
+1,MBS,Matemática Básica,33
+2,OCP,Organização de Computadores,33
+2,PMD,Programação Modular,66
+2,DIF,Design de Interfaces,66
+2,ESF,Engenharia de Software,66
+2,PMB,Projeto e Modelagem de Bancos de Dados,33
+2,FMD,Fund. Matemática Discreta,33
+3,SOP,Sistema Operacional,33
+3,POO,Programação Orientada a Objetos,66
+3,DIT,Design de Interação,66
+3,APS,Análise e Projeto de Software,66
+3,IOB,Implementação e Operação de Bancos de Dados,66
+3,FEE,Fundamentos de Estatística Exploratória,33
+4,EDD,Estruturas de Dados ,66
+4,PPP,Princípios e Padrões de Projeto,66
+4,WB1,Desenvolvimento de Aplicativos Web I,66
+4,GPJ,Gerência de Projetos,66
+4,PBD,Programação em Bancos de Dados,33
+4,FIE,Fundamentos de Inferência Estatística,33
+5,RCP,Redes de Computadores,66
+5,PPA,Princípios e Padrões de Arquitetura,66
+5,WB2,Desenvolvimento de Aplicativos Web II,66
+5,QSF,Qualidade de Software,33
+5,EEP,Empreendimentos Empresariais,66
+5,MCT,Metodologia Científica,33
+6,TCI,Tópicos em Ciência da Computação,33
+6,TDS,Tópicos em Desenvolvimento de Sistemas,33
+6,TDA,Tópicos em Desenvolvimento de Aplicativos,33
+6,TBD,Tópicos em Banco de Dados,33
+6,TAS,Tópicos em Análise de Sistemas,33
+6,SEM,Seminários,166
+OPTATIVA,ING,Inglês,33
+OPTATIVA,LIB,Libras,33
+6,TCC,Trabalho de Conclusão de Curso,66
+4,ACC,Atividades Complementares,66
