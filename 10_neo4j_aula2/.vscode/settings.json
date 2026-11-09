@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "plyconfig.json": "jsonc"
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
