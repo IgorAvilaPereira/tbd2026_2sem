@@ -895,3 +895,54 @@ Neo4j (aula 2)
 [scripts_importacao_disciplinas_e_prerequisitos.txt](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./10_neo4j_aula2/scripts_importacao_disciplinas_e_prerequisitos.txt) <br>
 [hello_neo4j](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./10_neo4j_aula2/hello_neo4j) <br>
 [neo4j2](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./10_neo4j_aula2/neo4j2) <br>
+## [./11_cassandra](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./11_cassandra) <br>
+[cassandra.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/cassandra.pdf) <br>
+[introducao_cassandra.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/introducao_cassandra.md) <br>
+
+
+```bash
+-- 1ª vez
+sudo docker pull cassandra
+
+sudo docker run --name cassandra -p \
+127.0.0.1:9042:9042 -p 127.0.0.1:9160:9160 -d cassandra
+
+sudo docker exec -it cassandra cqlsh
+
+-- demais vezes
+sudo docker start cassandra
+sudo docker exec -it cassandra cqlsh
+```
+
+```xml
+<dependencies>
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-mapping</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+    </dependencies>
+```
+
+
+
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/11_cassandra)
+
+&nbsp;
+[demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/demo) <br>
+[imagens](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/imagens) <br>
+## [./12_cassandra](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./12_cassandra) <br>
+[cassandra_com_java.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/cassandra_com_java.md) <br>
+[cassandra.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/cassandra.md) <br>
+[gabarito_mini_projeto_sistema_de_mensagens.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/gabarito_mini_projeto_sistema_de_mensagens.md) <br>
+[mini_projeto_sistema_de_mensagens.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/mini_projeto_sistema_de_mensagens.md) <br>
+[Código - Exemplo](https://github.com/IgorAvilaPereira/crud-java-cassandra)
+
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/12_cassandra)
+&nbsp;
+[demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/demo) <br>
