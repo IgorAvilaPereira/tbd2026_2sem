@@ -896,6 +896,8 @@ Neo4j (aula 2)
 [hello_neo4j](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./10_neo4j_aula2/hello_neo4j) <br>
 [neo4j2](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./10_neo4j_aula2/neo4j2) <br>
 ## [./11_cassandra](https://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/./11_cassandra) <br>
+[cassandra2.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/cassandra2.md) <br>
+[cassandra_aula.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/cassandra_aula.md) <br>
 [cassandra.pdf](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/cassandra.pdf) <br>
 [introducao_cassandra.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./11_cassandra/introducao_cassandra.md) <br>
 
@@ -903,15 +905,16 @@ Neo4j (aula 2)
 ```bash
 -- 1ª vez
 sudo docker pull cassandra
-
 sudo docker run --name cassandra -p \
 127.0.0.1:9042:9042 -p 127.0.0.1:9160:9160 -d cassandra
+sudo docker exec -it cassandra bash
+cqlsh
 
-sudo docker exec -it cassandra cqlsh
 
 -- demais vezes
 sudo docker start cassandra
-sudo docker exec -it cassandra cqlsh
+sudo docker exec -it cassandra bash
+cqlsh
 ```
 
 ```xml
