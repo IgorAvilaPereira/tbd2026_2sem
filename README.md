@@ -949,4 +949,5 @@ cqlsh
 
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/tbd2026_2sem/tree/main/12_cassandra)
 &nbsp;
+[revisao.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/revisao.md) <br>
 [demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/demo) <br>
