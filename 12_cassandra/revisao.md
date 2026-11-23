@@ -101,24 +101,8 @@ Documentação oficial: [https://cassandra.apache.org/doc/latest/](https://cassa
 
 Imagine um cluster com três servidores:
 
-```mermaid
-flowchart TB
-    APP[Aplicação Java]
-    N1[Node 1]
-    N2[Node 2]
-    N3[Node 3]
-    D1[(Dados)]
-    D2[(Dados)]
-    D3[(Dados)]
+![Cluster](./../cluster.svg)
 
-    APP -->|Requisição| N1
-    N1 <-->|Comunicação P2P| N2
-    N2 <-->|Comunicação P2P| N3
-    N3 <-->|Comunicação P2P| N1
-    N1 --- D1
-    N2 --- D2
-    N3 --- D3
-```
 
 Ao inserir um registro, Cassandra utiliza a chave de partição para determinar onde os dados serão armazenados. Conforme a estratégia de replicação, outras cópias também serão mantidas.
 
