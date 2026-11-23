@@ -945,6 +945,7 @@ cqlsh
 [cassandra.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/cassandra.md) <br>
 [cluster.svg](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/cluster.svg) <br>
 [gabarito_mini_projeto_sistema_de_mensagens.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/gabarito_mini_projeto_sistema_de_mensagens.md) <br>
+[grafo.svg](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/grafo.svg) <br>
 [mini_projeto_sistema_de_mensagens.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/mini_projeto_sistema_de_mensagens.md) <br>
 [Código - Exemplo](https://github.com/IgorAvilaPereira/crud-java-cassandra)
 
