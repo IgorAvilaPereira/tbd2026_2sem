@@ -1,0 +1,58 @@
+<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 805.89 260.7" width="805.89" height="260.7" id="m0acfee__root" data-diagram-type="flowchart">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .t-label{font-size:13px;font-weight:500}</style>
+  <style data-mercat-style="theme-light">#m0acfee__root{--m-text:#1f1f1f;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775}</style>
+  <style data-mercat-style="theme-dark">#m0acfee__root.dark{--m-text:#e3e3e3;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f}</style>
+  <g class="mercat mercat-flowchart" transform="translate(55.83, -35)">
+    <defs>
+      <marker id="m0acfee__mk-arrow" refX="9.45" refY="3.4" markerWidth="10.8" markerHeight="6.8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 0 L 10.8 3.4 L 0 6.8 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+    </defs>
+    <g class="m-node m-edge" id="m0acfee__edge__A__P1__0" data-role="connector">
+      <path d="M 428.99 86.9 L 428.99 116.9 Q 428.99 122.9, 422.99 122.9 L 267.7 122.9 Q 261.7 122.9, 261.7 128.9 L 261.7 145.55" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0acfee__edge__A__P2__0" data-role="connector">
+      <path d="M 466.43 86.9 L 466.43 116.9 Q 466.43 122.9, 472.43 122.9 L 627.71 122.9 Q 633.71 122.9, 633.71 128.9 L 633.71 145.55" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0acfee__edge__P1__R1__0" data-role="connector">
+      <path d="M 217.03 183.8 L 217.03 213.8 Q 217.03 219.8, 211.03 219.8 L 55.54 219.8 Q 49.54 219.8, 49.54 225.8 L 49.54 242.45" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0acfee__edge__P1__R2__0" data-role="connector">
+      <path d="M 261.7 183.8 L 261.7 242.45" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0acfee__edge__P1__R3__0" data-role="connector">
+      <path d="M 306.37 183.8 L 306.37 213.8 Q 306.37 219.8, 312.37 219.8 L 437.4 219.8 Q 443.4 219.8, 443.4 225.8 L 443.4 242.45" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0acfee__edge__P2__R4__0" data-role="connector">
+      <path d="M 633.71 183.8 L 633.71 242.45" class="m-path" marker-end="url(#m0acfee__mk-arrow)"/>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__A" data-role="vertex">
+      <rect x="379.55" y="50" width="136.33" height="36.9" class="m-shape"/>
+      <text x="447.71" y="68.45" class="m-label t-label" text-anchor="middle">Tabela: matricula</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__P1" data-role="vertex">
+      <rect x="160.36" y="146.9" width="202.68" height="36.9" class="m-shape"/>
+      <text x="261.7" y="165.35" class="m-label t-label" text-anchor="middle">Partition: aluno_id = UUID-1</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__P2" data-role="vertex">
+      <rect x="532.38" y="146.9" width="202.68" height="36.9" class="m-shape"/>
+      <text x="633.71" y="165.35" class="m-label t-label" text-anchor="middle">Partition: aluno_id = UUID-2</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__R1" data-role="vertex">
+      <rect x="-40.83" y="243.8" width="180.75" height="36.9" class="m-shape"/>
+      <text x="49.54" y="262.25" class="m-label t-label" text-anchor="middle">01/03 - Banco de Dados</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__R2" data-role="vertex">
+      <rect x="179.92" y="243.8" width="163.57" height="36.9" class="m-shape"/>
+      <text x="261.7" y="262.25" class="m-label t-label" text-anchor="middle">10/03 - Programação</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__R3" data-role="vertex">
+      <rect x="383.49" y="243.8" width="119.82" height="36.9" class="m-shape"/>
+      <text x="443.4" y="262.25" class="m-label t-label" text-anchor="middle">01/04 - Redes</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0acfee__node__R4" data-role="vertex">
+      <rect x="543.31" y="243.8" width="180.81" height="36.9" class="m-shape"/>
+      <text x="633.71" y="262.25" class="m-label t-label" text-anchor="middle">05/03 - Banco de Dados</text>
+    </g>
+  </g>
+</svg>

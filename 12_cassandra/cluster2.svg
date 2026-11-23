@@ -1,0 +1,51 @@
+<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 331.35 357.6" width="331.35" height="357.6" id="m3f6184__root" data-diagram-type="flowchart">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .t-label{font-size:13px;font-weight:500}</style>
+  <style data-mercat-style="theme-light">#m3f6184__root{--m-text:#1f1f1f;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775}</style>
+  <style data-mercat-style="theme-dark">#m3f6184__root.dark{--m-text:#e3e3e3;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f}</style>
+  <g class="mercat mercat-flowchart" transform="translate(-35, -35)">
+    <defs>
+      <marker id="m3f6184__mk-arrow" refX="9.45" refY="3.4" markerWidth="10.8" markerHeight="6.8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 0 L 10.8 3.4 L 0 6.8 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+    </defs>
+    <g class="m-node m-edge" id="m3f6184__edge__I__P__0" data-role="connector">
+      <path d="M 200.68 86.9 L 200.68 145.55" class="m-path" marker-end="url(#m3f6184__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m3f6184__edge__P__D__0" data-role="connector">
+      <path d="M 200.68 183.8 L 200.68 242.45" class="m-path" marker-end="url(#m3f6184__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m3f6184__edge__D__N1__0" data-role="connector">
+      <path d="M 163.68 280.7 L 163.68 310.7 Q 163.68 316.7, 157.68 316.7 L 92.89 316.7 Q 86.89 316.7, 86.89 322.7 L 86.89 339.35" class="m-path" marker-end="url(#m3f6184__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m3f6184__edge__D__N2__0" data-role="connector">
+      <path d="M 200.68 280.7 L 200.68 339.35" class="m-path" marker-end="url(#m3f6184__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m3f6184__edge__D__N3__0" data-role="connector">
+      <path d="M 237.68 280.7 L 237.68 310.7 Q 237.68 316.7, 243.68 316.7 L 308.46 316.7 Q 314.46 316.7, 314.46 322.7 L 314.46 339.35" class="m-path" marker-end="url(#m3f6184__mk-arrow)"/>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__I" data-role="vertex">
+      <rect x="112.02" y="50" width="177.32" height="36.9" class="m-shape"/>
+      <text x="200.68" y="68.45" class="m-label t-label" text-anchor="middle">Inserção de um registro</text>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__P" data-role="vertex">
+      <rect x="90.94" y="146.9" width="219.47" height="36.9" class="m-shape"/>
+      <text x="200.68" y="165.35" class="m-label t-label" text-anchor="middle">Determinação da Partition Key</text>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__D" data-role="vertex">
+      <rect x="114.68" y="243.8" width="172" height="36.9" class="m-shape"/>
+      <text x="200.68" y="262.25" class="m-label t-label" text-anchor="middle">Distribuição dos dados</text>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__N1" data-role="vertex">
+      <rect x="50" y="340.7" width="73.78" height="36.9" class="m-shape"/>
+      <text x="86.89" y="359.15" class="m-label t-label" text-anchor="middle">Node 1</text>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__N2" data-role="vertex">
+      <rect x="163.78" y="340.7" width="73.78" height="36.9" class="m-shape"/>
+      <text x="200.68" y="359.15" class="m-label t-label" text-anchor="middle">Node 2</text>
+    </g>
+    <g class="m-node m-node--rect" id="m3f6184__node__N3" data-role="vertex">
+      <rect x="277.57" y="340.7" width="73.78" height="36.9" class="m-shape"/>
+      <text x="314.46" y="359.15" class="m-label t-label" text-anchor="middle">Node 3</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.7 260.7" width="328.7" height="260.7" id="m28d446__root" data-diagram-type="flowchart">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .t-label{font-size:13px;font-weight:500}</style>
+  <style data-mercat-style="theme-light">#m28d446__root{--m-text:#1f1f1f;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775}</style>
+  <style data-mercat-style="theme-dark">#m28d446__root.dark{--m-text:#e3e3e3;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f}</style>
+  <g class="mercat mercat-flowchart" transform="translate(-31.58, -35)">
+    <defs>
+      <marker id="m28d446__mk-arrow" refX="9.45" refY="3.4" markerWidth="10.8" markerHeight="6.8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 0 L 10.8 3.4 L 0 6.8 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+    </defs>
+    <g class="m-node m-edge" id="m28d446__edge__A__B__0" data-role="connector">
+      <path d="M 145.49 86.9 L 145.49 145.55" class="m-path" marker-end="url(#m28d446__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m28d446__edge__A__C__0" data-role="connector">
+      <path d="M 232.4 86.9 L 232.4 145.55" class="m-path" marker-end="url(#m28d446__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m28d446__edge__B__D__0" data-role="connector">
+      <path d="M 105.12 183.8 L 105.12 242.45" class="m-path" marker-end="url(#m28d446__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m28d446__edge__C__E__0" data-role="connector">
+      <path d="M 272.77 183.8 L 272.77 242.45" class="m-path" marker-end="url(#m28d446__mk-arrow)"/>
+    </g>
+    <g class="m-node m-node--rect" id="m28d446__node__A" data-role="vertex">
+      <rect x="46.58" y="50" width="284.72" height="36.9" class="m-shape"/>
+      <text x="188.95" y="68.45" class="m-label t-label" text-anchor="middle">PRIMARY KEY (aluno_id, data_matricula)</text>
+    </g>
+    <g class="m-node m-node--rect" id="m28d446__node__B" data-role="vertex">
+      <rect x="50" y="146.9" width="110.25" height="36.9" class="m-shape"/>
+      <text x="105.12" y="165.35" class="m-label t-label" text-anchor="middle">Partition Key</text>
+    </g>
+    <g class="m-node m-node--rect" id="m28d446__node__C" data-role="vertex">
+      <rect x="200.25" y="146.9" width="145.04" height="36.9" class="m-shape"/>
+      <text x="272.77" y="165.35" class="m-label t-label" text-anchor="middle">Clustering Column</text>
+    </g>
+    <g class="m-node m-node--rect" id="m28d446__node__D" data-role="vertex">
+      <rect x="64.08" y="243.8" width="82.09" height="36.9" class="m-shape"/>
+      <text x="105.12" y="262.25" class="m-label t-label" text-anchor="middle">aluno_id</text>
+    </g>
+    <g class="m-node m-node--rect" id="m28d446__node__E" data-role="vertex">
+      <rect x="211.42" y="243.8" width="122.69" height="36.9" class="m-shape"/>
+      <text x="272.77" y="262.25" class="m-label t-label" text-anchor="middle">data_matricula</text>
+    </g>
+  </g>
+</svg>

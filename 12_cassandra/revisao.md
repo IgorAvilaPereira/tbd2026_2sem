@@ -105,20 +105,7 @@ Uma questão importante: Cassandra não utiliza uma arquitetura tradicional de s
 
 Exemplo conceitual de distribuição de dados:
 
-```
-flowchart TD
-    I["Inserção de um registro"]
-    P["Determinação da Partition Key"]
-    D["Distribuição dos dados"]
-    N1["Node 1"]
-    N2["Node 2"]
-    N3["Node 3"]
-
-    I --> P --> D
-    D --> N1
-    D --> N2
-    D --> N3
-```
+![Cluster2](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/cluster2.svg)
 
 A replicação permite que os dados sejam armazenados em mais de um nó, aumentando a disponibilidade e a tolerância a falhas.
 
@@ -126,21 +113,8 @@ A replicação permite que os dados sejam armazenados em mais de um nó, aumenta
 
 A hierarquia lógica do Cassandra pode ser representada da seguinte maneira:
 
-```
-flowchart TD
-    A["Cluster"]
-    B["Keyspace"]
-    C["Table"]
-    D["Partition"]
-    E["Rows"]
-    F["Columns"]
+![hierarquia](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/hierarquia.svg)
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-```
 
 ### 6.1. O que é um Keyspace?
 
@@ -247,15 +221,7 @@ Nesse exemplo:
 
 Representação:
 
-```
-flowchart TD
-    A["PRIMARY KEY (aluno_id, data_matricula)"]
-    A --> B["Partition Key"]
-    A --> C["Clustering Column"]
-
-    B --> D["aluno_id"]
-    C --> E["data_matricula"]
-```
+![representacao](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/representacao.svg)
 
 ### 7.2. Como os dados são organizados?
 
@@ -270,18 +236,8 @@ Considerando a tabela anterior:
 
 Representação conceitual:
 
-```
-flowchart TD
-    A["Tabela: matricula"]
-    A --> P1["Partition: aluno_id = UUID-1"]
-    A --> P2["Partition: aluno_id = UUID-2"]
 
-    P1 --> R1["01/03 - Banco de Dados"]
-    P1 --> R2["10/03 - Programação"]
-    P1 --> R3["01/04 - Redes"]
-
-    P2 --> R4["05/03 - Banco de Dados"]
-```
+![representacao_conceitual](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/representacao_conceitual.svg)
 
 ### 7.3. Consultas utilizando a Partition Key
 
