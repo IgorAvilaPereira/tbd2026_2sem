@@ -1,5 +1,37 @@
 # Aula de Revisão – Neo4j e Apache Cassandra
 
+**Disciplina:** Implementação e Operação de Banco de Dados (IOBD)
+
+**Foco principal:** Apache Cassandra, arquitetura, modelagem, operações CQL e integração com Java.
+
+A proposta é revisar os dois bancos NoSQL, dedicando aproximadamente 70% da aula ao Cassandra e à implementação de operações utilizando Java. O Neo4j será abordado de forma mais objetiva, retomando seus conceitos fundamentais e sua integração com aplicações Java.
+
+---
+
+## 1. Objetivos da aula
+
+Ao final da aula, espera-se que os estudantes consigam:
+
+- Diferenciar bancos NoSQL orientados a grafos e colunas largas.
+- Identificar cenários adequados para utilização do Neo4j e Cassandra.
+- Compreender a arquitetura distribuída do Cassandra.
+- Criar estruturas e executar operações utilizando CQL.
+- Desenvolver aplicações Java que realizem operações CRUD no Cassandra.
+- Compreender como aplicações Java interagem com bancos NoSQL.
+
+## 2. Organização da aula
+
+| Etapa     | Conteúdo                           | Tempo       |
+| --------- | ---------------------------------- | ----------- |
+| 1         | Revisão do Neo4j                   | 20 min      |
+| 2         | Introdução e arquitetura Cassandra | 25 min      |
+| 3         | Modelagem e CQL                    | 30 min      |
+| 4         | Cassandra com Java                 | 45 min      |
+| 5         | Exercícios práticos e comparação   | 30 min      |
+| **Total** | <br>                               | **150 min** |
+
+---
+
 # PARTE I – NEO4J
 
 ## 3. Revisão do Neo4j
@@ -60,6 +92,8 @@ RETURN a.nome, d.nome;
 ```
 
 **Questão para discussão:** por que representar alunos e disciplinas como nós conectados pode ser interessante em um sistema acadêmico?
+
+**Resposta esperada:** porque permite representar diretamente os relacionamentos entre entidades e realizar consultas sobre essas conexões. Por exemplo, identificar as disciplinas em que um aluno está matriculado ou encontrar alunos que compartilham disciplinas.
 
 ---
 
@@ -842,7 +876,7 @@ Documentação: [https://neo4j.com/docs/java-manual/current/](https://neo4j.com/
 
 ---
 
-# PARTE V – ATIVIDADE DE REVISÃO
+# PARTE V – ATIVIDADE DE REVISÃO COM GABARITO
 
 ## 19. Proposta: Sistema de monitoramento de acessos
 
@@ -852,15 +886,41 @@ Imagine que uma aplicação precisa registrar os acessos de usuários a um siste
 
 Responda:
 
-a) Qual é a principal diferença entre um banco orientado a grafos e um banco de colunas largas?
+**a)** Qual é a principal diferença entre um banco orientado a grafos e um banco de colunas largas?
 
-b) Qual é a finalidade de um Keyspace no Cassandra?
+**Gabarito:**
 
-c) Qual é a diferença entre Partition Key e Clustering Column?
+O banco orientado a grafos, como o Neo4j, organiza os dados por meio de nós e relacionamentos, sendo adequado para representar e consultar conexões entre entidades.
 
-d) Por que o Cassandra não é adequado para consultas que dependem constantemente de JOINs?
+O banco de colunas largas, como o Cassandra, organiza os dados em tabelas com particionamento e colunas de agrupamento, sendo adequado para aplicações distribuídas e consultas previamente planejadas.
 
-e) O que significa Replication Factor?
+**b)** Qual é a finalidade de um Keyspace no Cassandra?
+
+**Gabarito:**
+
+O Keyspace é uma estrutura que agrupa tabelas e define configurações de replicação dos dados, como a estratégia utilizada e o fator de replicação.
+
+**c)** Qual é a diferença entre Partition Key e Clustering Column?
+
+**Gabarito:**
+
+A Partition Key determina em qual partição os dados serão armazenados e participa da distribuição dos dados entre os nós do cluster.
+
+A Clustering Column determina a organização e a ordenação dos registros dentro de uma mesma partição.
+
+**d)** Por que o Cassandra não é adequado para consultas que dependem constantemente de JOINs?
+
+**Gabarito:**
+
+Porque Cassandra não oferece suporte tradicional a JOINs entre tabelas. Sua modelagem é orientada às consultas da aplicação, sendo comum armazenar informações redundantes em tabelas diferentes para evitar operações de junção.
+
+**e)** O que significa Replication Factor?
+
+**Gabarito:**
+
+É a quantidade de réplicas de cada partição que o Cassandra deve manter no cluster. Por exemplo, um Replication Factor igual a 3 indica que cada partição deverá possuir três cópias, conforme a estratégia de replicação configurada.
+
+---
 
 ### Questão 2 – Cassandra e CQL
 
@@ -878,19 +938,113 @@ CREATE TABLE acesso (
 
 Implemente os seguintes comandos:
 
-a) Inserir um acesso para determinado usuário.
+**a)** Inserir um acesso para determinado usuário.
 
-b) Consultar todos os acessos de um usuário.
+**Gabarito:**
 
-c) Consultar os acessos de um usuário ordenados do mais recente para o mais antigo.
+```
+INSERT INTO acesso (
+    usuario_id,
+    data_acesso,
+    ip,
+    recurso
+) VALUES (
+    123e4567-e89b-12d3-a456-426614174000,
+    toTimestamp(now()),
+    '192.168.0.10',
+    '/sistema/alunos'
+);
+```
 
-d) Excluir um registro de acesso específico.
+**b)** Consultar todos os acessos de um usuário.
 
-e) Explique por que não é possível consultar eficientemente todos os acessos de determinado IP utilizando apenas a estrutura apresentada.
+**Gabarito:**
+
+```
+SELECT *
+FROM acesso
+WHERE usuario_id =
+    123e4567-e89b-12d3-a456-426614174000;
+```
+
+A consulta utiliza a Partition Key, permitindo localizar diretamente os registros associados ao usuário.
+
+**c)** Consultar os acessos de um usuário ordenados do mais recente para o mais antigo.
+
+**Gabarito:**
+
+Considerando a tabela original, cuja Clustering Column não possui ordenação explicitamente definida, podemos utilizar:
+
+```
+SELECT *
+FROM acesso
+WHERE usuario_id =
+    123e4567-e89b-12d3-a456-426614174000
+ORDER BY data_acesso DESC;
+```
+
+Outra possibilidade é definir a ordenação diretamente na criação da tabela:
+
+```
+CREATE TABLE acesso (
+    usuario_id UUID,
+    data_acesso TIMESTAMP,
+    ip TEXT,
+    recurso TEXT,
+    PRIMARY KEY (usuario_id, data_acesso)
+) WITH CLUSTERING ORDER BY (
+    data_acesso DESC
+);
+```
+
+**d)** Excluir um registro de acesso específico.
+
+**Gabarito:**
+
+Como a chave primária é composta por `usuario_id` e `data_acesso`, precisamos informar os dois valores:
+
+```
+DELETE FROM acesso
+WHERE usuario_id =
+    123e4567-e89b-12d3-a456-426614174000
+AND data_acesso = '2026-11-23T14:30:00';
+```
+
+**e)** Explique por que não é possível consultar eficientemente todos os acessos de determinado IP utilizando apenas a estrutura apresentada.
+
+**Gabarito:**
+
+Porque `ip` não faz parte da chave primária e a consulta não informa a Partition Key.
+
+Para atender esse tipo de consulta, podemos criar outra tabela, modelada especificamente para localizar os acessos por endereço IP.
+
+Exemplo:
+
+```
+CREATE TABLE acesso_por_ip (
+    ip TEXT,
+    data_acesso TIMESTAMP,
+    usuario_id UUID,
+    recurso TEXT,
+    PRIMARY KEY (ip, data_acesso)
+);
+```
+
+Consulta:
+
+```
+SELECT *
+FROM acesso_por_ip
+WHERE ip = '192.168.0.10';
+```
+
+Essa abordagem representa a modelagem orientada às consultas do Cassandra. Os dados são armazenados em mais de uma tabela para atender diferentes necessidades de acesso.
+
+---
 
 ### Questão 3 – Integração com Java
 
-Considerando a tabela anterior, desenvolva uma aplicação Java utilizando o driver oficial do Cassandra.
+Considerando a tabela `acesso` da questão anterior, desenvolva uma aplicação Java utilizando o driver oficial do Cassandra.
 
 A aplicação deverá:
 
@@ -900,6 +1054,115 @@ A aplicação deverá:
 4. Percorrer o `ResultSet` e apresentar os registros.
 5. Implementar a exclusão de um acesso.
 
+**Gabarito:**
+
+Uma possível implementação é:
+
+```
+import java.time.Instant;
+import java.util.UUID;
+
+import com.datastax.oss.driver.api.core.CqlSession;
+import com.datastax.oss.driver.api.core.cql.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try (CqlSession session =
+                CqlSession.builder().build()) {
+
+            UUID usuarioId = UUID.randomUUID();
+
+            // 1. Inserção
+
+            PreparedStatement inserir = session.prepare("""
+                INSERT INTO universidade.acesso
+                (usuario_id, data_acesso, ip, recurso)
+                VALUES (?, ?, ?, ?)
+            """);
+
+            Instant data = Instant.now();
+
+            session.execute(inserir.bind(
+                usuarioId,
+                data,
+                "192.168.0.10",
+                "/sistema/alunos"
+            ));
+
+            // 2. Consulta
+
+            PreparedStatement consultar = session.prepare("""
+                SELECT *
+                FROM universidade.acesso
+                WHERE usuario_id = ?
+            """);
+
+            ResultSet resultado = session.execute(
+                consultar.bind(usuarioId)
+            );
+
+            // 3. Apresentação dos registros
+
+            for (Row row : resultado) {
+
+                System.out.println(
+                    "Usuário: " +
+                    row.getUuid("usuario_id")
+                );
+
+                System.out.println(
+                    "Data: " +
+                    row.getInstant("data_acesso")
+                );
+
+                System.out.println(
+                    "IP: " +
+                    row.getString("ip")
+                );
+
+                System.out.println(
+                    "Recurso: " +
+                    row.getString("recurso")
+                );
+
+                System.out.println("----------------");
+            }
+
+            // 4. Exclusão
+
+            PreparedStatement excluir = session.prepare("""
+                DELETE FROM universidade.acesso
+                WHERE usuario_id = ?
+                AND data_acesso = ?
+            """);
+
+            session.execute(
+                excluir.bind(usuarioId, data)
+            );
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**Observações sobre a implementação:**
+
+- `CqlSession` estabelece a conexão com o Cassandra.
+- `prepare()` prepara as instruções CQL.
+- `bind()` associa os valores aos parâmetros.
+- `execute()` executa os comandos.
+- `ResultSet` representa o resultado da consulta.
+- `Row` representa cada registro recuperado.
+- `getInstant()` recupera o valor CQL `TIMESTAMP` como `Instant` no driver utilizado.
+
+A aplicação pressupõe que o Keyspace `universidade` e a tabela `acesso` já foram criados.
+
+---
+
 ### Questão 4 – Comparação
 
 Considere um sistema de recomendação de amizades.
@@ -907,6 +1170,36 @@ Considere um sistema de recomendação de amizades.
 Qual banco seria mais adequado para representar usuários, amizades e conexões entre usuários: Neo4j ou Cassandra?
 
 Justifique sua resposta considerando a estrutura de armazenamento e o tipo de consulta realizado.
+
+**Gabarito:**
+
+O Neo4j seria mais adequado, pois é um banco orientado a grafos.
+
+Os usuários poderiam ser representados como nós, enquanto as amizades seriam representadas por relacionamentos entre esses nós.
+
+Exemplo:
+
+```
+graph LR
+    A["João"]
+    B["Maria"]
+    C["Pedro"]
+    D["Ana"]
+
+    A --- B
+    A --- C
+    B --- D
+    C --- D
+```
+
+Essa estrutura facilita consultas como:
+
+- Encontrar amigos de determinado usuário.
+- Encontrar amigos em comum.
+- Identificar conexões entre usuários.
+- Recomendar pessoas com base em conexões existentes.
+
+No Cassandra, seria possível implementar esse sistema, mas seria necessário planejar tabelas específicas para as consultas desejadas, tornando consultas com múltiplos níveis de relacionamentos menos naturais.
 
 ---
 
@@ -941,7 +1234,3 @@ Justifique sua resposta considerando a estrutura de armazenamento e o tipo de co
 
 - Introdução: [https://neo4j.com/docs/getting-started/](https://neo4j.com/docs/getting-started/)
 - Driver Java: [https://neo4j.com/docs/java-manual/current/](https://neo4j.com/docs/java-manual/current/)
-
----
-
-**Sugestão didática:** dar especial atenção à modelagem por consultas no Cassandra, à diferença entre Partition Key e Clustering Column e à utilização de `CqlSession`, `PreparedStatement`, `BoundStatement` e `ResultSet`. São os conceitos que permitem aos estudantes sair da simples execução de comandos CQL e efetivamente desenvolver aplicações Java com Cassandra.
