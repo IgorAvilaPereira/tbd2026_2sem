@@ -957,3 +957,4 @@ cqlsh
 [representacao.svg](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/representacao.svg) <br>
 [revisao.md](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/revisao.md) <br>
 [demo](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/demo) <br>
+[revisao](https://github.com/IgorAvilaPereira/tbd2026_2sem/blob/main/./12_cassandra/revisao) <br>
