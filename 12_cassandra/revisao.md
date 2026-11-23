@@ -1,38 +1,4 @@
-Abaixo está a aula reorganizada integralmente em **Markdown**, com os diagramas convertidos para **Mermaid**, pronta para ser salva como arquivo `.md` ou utilizada no material da disciplina IOBD.
-
 # Aula de Revisão – Neo4j e Apache Cassandra
-
-**Disciplina:** Implementação e Operação de Banco de Dados (IOBD)
-
-**Foco principal:** Apache Cassandra, arquitetura, modelagem, operações CQL e integração com Java.
-
-A proposta é revisar os dois bancos NoSQL, dedicando aproximadamente 70% da aula ao Cassandra e à implementação de operações utilizando Java. O Neo4j será abordado de forma mais objetiva, retomando seus conceitos fundamentais e sua integração com aplicações Java.
-
----
-
-## 1. Objetivos da aula
-
-Ao final da aula, espera-se que os estudantes consigam:
-
-- Diferenciar bancos NoSQL orientados a grafos e colunas largas.
-- Identificar cenários adequados para utilização do Neo4j e Cassandra.
-- Compreender a arquitetura distribuída do Cassandra.
-- Criar estruturas e executar operações utilizando CQL.
-- Desenvolver aplicações Java que realizem operações CRUD no Cassandra.
-- Compreender como aplicações Java interagem com bancos NoSQL.
-
-## 2. Organização da aula
-
-| Etapa     | Conteúdo                           | Tempo       |
-| --------- | ---------------------------------- | ----------- |
-| 1         | Revisão do Neo4j                   | 20 min      |
-| 2         | Introdução e arquitetura Cassandra | 25 min      |
-| 3         | Modelagem e CQL                    | 30 min      |
-| 4         | Cassandra com Java                 | 45 min      |
-| 5         | Exercícios práticos e comparação   | 30 min      |
-| **Total** | <br>                               | **150 min** |
-
----
 
 # PARTE I – NEO4J
 
