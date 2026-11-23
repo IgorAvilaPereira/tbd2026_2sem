@@ -1,0 +1,38 @@
+<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.35 146.9" width="476.35" height="146.9" id="m0e9203__root" data-diagram-type="flowchart">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .m-edge-label .m-pill-bg,.mercat .m-edge-label .m-shape{fill:var(--m-pill-bg);stroke:var(--m-pill-border);stroke-width:1px}.mercat .m-edge-label .m-label{fill:var(--m-text-sec)}.mercat .t-label{font-size:13px;font-weight:500}.mercat .t-edge{font-size:11px;font-weight:400}</style>
+  <style data-mercat-style="theme-light">#m0e9203__root{--m-text:#1f1f1f;--m-text-sec:#797979;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775;--m-pill-bg:#fbfbfb;--m-pill-border:#d7d7d7}</style>
+  <style data-mercat-style="theme-dark">#m0e9203__root.dark{--m-text:#e3e3e3;--m-text-sec:#959595;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f;--m-pill-bg:#232323;--m-pill-border:#424242}</style>
+  <g class="mercat mercat-flowchart" transform="translate(-35, -76.55)">
+    <defs>
+      <marker id="m0e9203__mk-arrow" refX="9.45" refY="3.4" markerWidth="10.8" markerHeight="6.8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 0 L 10.8 3.4 L 0 6.8 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+    </defs>
+    <g class="m-node m-edge" id="m0e9203__edge__A__B__0" data-role="connector">
+      <path d="M 152.75 145.7 L 182.75 145.7 Q 188.75 145.7, 188.75 139.7 L 188.75 116 Q 188.75 110, 194.75 110 L 297.81 110" class="m-path" marker-end="url(#m0e9203__mk-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m0e9203__edge__A__C__0" data-role="connector">
+      <path d="M 152.75 154.31 L 182.75 154.31 Q 188.75 154.31, 188.75 160.31 L 188.75 184 Q 188.75 190, 194.75 190 L 306.4 190" class="m-path" marker-end="url(#m0e9203__mk-arrow)"/>
+    </g>
+    <g class="m-node m-node--rect" id="m0e9203__node__A" data-role="vertex">
+      <rect x="50" y="131.55" width="102.75" height="36.9" class="m-shape"/>
+      <text x="101.37" y="150" class="m-label t-label" text-anchor="middle">Aluno: João</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0e9203__node__B" data-role="vertex">
+      <rect x="299.16" y="91.55" width="197.19" height="36.9" class="m-shape"/>
+      <text x="397.76" y="110" class="m-label t-label" text-anchor="middle">Disciplina: Banco de Dados</text>
+    </g>
+    <g class="m-node m-node--rect" id="m0e9203__node__C" data-role="vertex">
+      <rect x="307.75" y="171.55" width="180.02" height="36.9" class="m-shape"/>
+      <text x="397.76" y="190" class="m-label t-label" text-anchor="middle">Disciplina: Programação</text>
+    </g>
+    <g class="m-edge-label">
+      <rect x="158.75" y="116.7" width="116.41" height="22.3" rx="11.15" ry="11.15" class="m-pill-bg"/>
+      <text x="216.95" y="127.85" class="m-label t-edge" text-anchor="middle">MATRICULADO_EM</text>
+    </g>
+    <g class="m-edge-label">
+      <rect x="158.75" y="161" width="116.41" height="22.3" rx="11.15" ry="11.15" class="m-pill-bg"/>
+      <text x="216.95" y="172.15" class="m-label t-edge" text-anchor="middle">MATRICULADO_EM</text>
+    </g>
+  </g>
+</svg>

@@ -18,15 +18,8 @@ O **Neo4j** é um banco de dados NoSQL orientado a grafos.
 
 Exemplo de relacionamento entre alunos e disciplinas:
 
-```mermaid
-graph LR
-    A["Aluno: João"]
-    B["Disciplina: Banco de Dados"]
-    C["Disciplina: Programação"]
+![Grafo](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/grafo.svg)
 
-    A -->|MATRICULADO_EM| B
-    A -->|MATRICULADO_EM| C
-```
 
 ### 3.3. Exemplos de comandos Cypher
 
@@ -101,7 +94,7 @@ Documentação oficial: [https://cassandra.apache.org/doc/latest/](https://cassa
 
 Imagine um cluster com três servidores:
 
-![Cluster](./../cluster.svg)
+![Cluster](http://raw.githubusercontent.com/IgorAvilaPereira/tbd2026_2sem/refs/heads/main/12_cassandra/cluster.svg)
 
 
 Ao inserir um registro, Cassandra utiliza a chave de partição para determinar onde os dados serão armazenados. Conforme a estratégia de replicação, outras cópias também serão mantidas.
